@@ -5,16 +5,23 @@ class CameraPage extends StatelessWidget {
   @override
   Widget build(BuildContext context){
     return Scaffold(
-      backgroundColor: Colors.white,
+      backgroundColor: Color.fromRGBO(250, 250, 250, 1),
       body: Stack(
         children: <Widget>[
-          SafeArea(child: Column(
-              crossAxisAlignment: CrossAxisAlignment.center,
-              children: <Widget>[
-                Text('Camera')
-              ],
-            ),
-          ),
+          Column(
+            //mainAxisSize: MainAxisSize.min,
+            crossAxisAlignment: CrossAxisAlignment.center,
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: <Widget>[
+              Container(
+                width: double.infinity,
+                child: Text(
+                  'Camera',
+                  textAlign: TextAlign.center
+              )
+              )
+            ],
+          )
         ],
       ),
     );

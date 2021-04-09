@@ -5,16 +5,23 @@ class LearningPage extends StatelessWidget {
   @override
   Widget build(BuildContext context){
     return Scaffold(
-      backgroundColor: Colors.white,
+      backgroundColor: Color.fromRGBO(250, 250, 250, 1),
       body: Stack(
         children: <Widget>[
-          SafeArea(child: Column(
+          Column(
+            //mainAxisSize: MainAxisSize.min,
             crossAxisAlignment: CrossAxisAlignment.center,
+            mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
-              Text('Learning')
+              Container(
+                  width: double.infinity,
+                  child: Text(
+                      'Learning',
+                      textAlign: TextAlign.center
+                  )
+              )
             ],
-          ),
-          ),
+          )
         ],
       ),
     );

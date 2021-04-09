@@ -6,7 +6,8 @@ import 'package:st_scan_and_learning/learning/learning_page.dart';
 import 'package:st_scan_and_learning/st_app_icons.dart';
 
 void main() {
-  //SystemChrome.setEnabledSystemUIOverlays([SystemUiOverlay.bottom]);
+  WidgetsFlutterBinding.ensureInitialized();
+  SystemChrome.setEnabledSystemUIOverlays([SystemUiOverlay.bottom]);
   runApp(MyApp());
 }
 
@@ -86,14 +87,14 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
             BottomNavigationBarItem(
               icon: Icon(
                 StAppIcon.applications,
-                size: 33.0,
+                size: 43.0,
               ),
               label: 'Application',
             ),
             BottomNavigationBarItem(
               icon: Icon(
                 StAppIcon.ar,
-                size: 33.0,
+                size: 43.0,
               ),
               label: 'AR Camera',
             ),
